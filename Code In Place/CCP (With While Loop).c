@@ -9,11 +9,11 @@ int main()
     char citizen[d][20];
     int age[d], gender[d], cnic[d], status[d], working[d], jobType[d];
 
-    // INPUT SECTION (while loop)
+    // INPUT SECTION (using while loops)
     while (i < d)
     {
         printf("\n--- Person %d ---\n", i + 1);
-
+        
         printf("Do you possess Citizenship of which country? ");
         scanf("%s", citizen[i]);
 
@@ -41,16 +41,15 @@ int main()
         {
             jobType[i] = 0;
         }
-
+        
         i++;
     }
 
     printf("\n===== Voting Eligibility Results =====\n");
 
-    // OUTPUT SECTION (using do-while loop)
+    // OUTPUT SECTION (using while loop)
     i = 0;
-
-    do
+    while (i < d)
     {
         printf("\nPerson %d:\n", i + 1);
         printf("Citizen: %s | Age: %d | CNIC: %s | Status: %s\n",
@@ -81,7 +80,6 @@ int main()
         }
 
         i++;
-
-    } while (i < d);
+    }
     return 0;
 }
