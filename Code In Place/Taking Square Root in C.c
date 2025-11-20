@@ -1,4 +1,4 @@
-//Sum Using Structures
+// Sum Using Structures
 #include<stdio.h>
 int add(int a, int b)
 {
